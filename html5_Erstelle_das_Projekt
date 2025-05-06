@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hochzeit</title>
+  </head>
+  <body>
+    <header>
+      <div style="text-align: center">
+        <img
+          width="100"
+          src="https://storage01.dbe.academy/fswd/logo-hochzeit.svg"
+          alt="Hochzeit Logo"
+          title="Logo Hochzeit"
+        />
+      </div>
+      <nav>
+        <ul style="list-style: none; padding: 0; text-align: center">
+          <li style="display: inline">
+            <a href="#ablauf">Ablauf</a> |
+          </li>
+          <li style="display: inline">
+            <a href="#location">Location</a> |
+          </li>
+          <li style="display: inline">
+            <a href="#meldung">An/Abmeldung</a> |
+          </li>
+          <li style="display: inline">
+            <a href="#kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Hochzeit</h1>
+      <figure>
+        <img
+          width="450"
+          src="https://images.unsplash.com/photo-1633051567046-844064059c53?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Hochzeit Tischdekoration"
+          title="Hochzeit"
+        />
+        <figcaption>
+          <small>
+            <i>Photo by </i>
+            <a href="https://unsplash.com/@paupattersonphotography_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Pau Patterson Photography
+            </a>
+            <i>on </i>
+            <a href="https://unsplash.com/photos/a-wooden-table-topped-with-a-plate-of-food-AYr5lk2tLE8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Unsplash
+            </a>
+          </small>
+        </figcaption>
+      </figure>
+      <section id="ablauf">
+        <h2>Ablauf</h2>
+        <dl>
+          <dt><strong>8:00-9:00</strong></dt>
+          <dd>Aufstehen</dd>
+          <dt><strong>9:00-10:00</strong></dt>
+          <dd>Essen</dd>
+        </dl>
+      </section>
+
+      <section id="location">
+        <h2>Location</h2>
+        <p>
+          Die Hochzeit findet an folgender Adresse statt:
+          <i>Staatstheater Stuttgart, 6, Oberer Schlossgarten, Stuttgart-Mitte, Stuttgart, Baden-Württemberg, 70173, Germany</i>
+        </p>
+        <iframe
+          width="425"
+          height="350"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=9.159421920776369%2C48.77067246880509%2C9.210491180419924%2C48.78973254178553&amp;layer=mapnik&amp;marker=48.78020341000745%2C9.184956550598145"
+          style="border: 1px solid black"
+          title="Karte der Location"
+        ></iframe>
+        <br />
+        <small>
+          <a href="https://www.openstreetmap.org/?mlat=48.78020&amp;mlon=9.18496#map=15/48.78020/9.18496">
+            View Larger Map
+          </a>
+        </small>
+      </section>
+
+      <section id="meldung">
+        <h2>An/Abmeldung</h2>
+        <form action="/meldung.php" method="POST">
+          <div>
+            <label for="name">Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              style="margin-bottom: 10px"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">E-mail:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-Mail"
+              style="margin-bottom: 10px"
+              required
+            />
+          </div>
+          <div>
+            <label for="anmeldung">Anmeldung</label>
+            <input type="radio" id="anmeldung" name="meldung" value="anmeldung" required />
+            <label for="abmeldung">Abmeldung</label>
+            <input type="radio" id="abmeldung" name="meldung" value="abmeldung" required />
+          </div>
+          <div style="margin-top: 10px">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <hr />
+    <footer id="kontakt">
+      <h3><i>Hochzeit</i></h3>
+      <p><strong>Telefonnummer:</strong> +491234567890</p>
+      <p><strong>E-mail:</strong> hochzeit@web.de</p>
+      <nav>
+        <ul style="list-style: none; padding: 0">
+          <li style="display: inline">
+            <a href="impressum.html">Impressum</a> |
+          </li>
+          <li style="display: inline">
+            <a href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <p>Copyright &copy; 2025</p>
+    </footer>
+  </body>
+</html>
