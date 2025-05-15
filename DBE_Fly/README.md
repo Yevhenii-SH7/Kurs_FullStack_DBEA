@@ -2,10 +2,6 @@ Aufgabe: Die DBE-Fly!
 Erstelle eine HTML-Datei inklusive CSS, um die folgende Webseite nachzubauen. Die Icons kannst du dir bei svgrepo (Link siehe unten) heraussuchen – sie müssen nicht exakt identisch sein. Die Bilder findest du auf unsplash (Link siehe unten) – auch hier ist eine 100%ige Übereinstimmung nicht erforderlich.
 Denke bitte auch daran uns bei Fragen zu kontaktieren, wir sind für dich da!
 
- 
-
- 
-
 Fokus der Umsetzung
 Hier konzentrierst du dich auf die Header- und Hero-Sektion der Webseite:
 
@@ -24,4 +20,7 @@ Zusätzlich dessen, sollte deine Seite auch Mobile-Optimiert sein. Wie das ausse
 Kopiere den Quellcode in das Textfeld oder sende ihn per E-Mail/Discord/Github an uns.
 
 Viel Erfolg bei der Umsetzung!
+
+Bonus:
+Als Bonus kannst du die anderen 3 Tabs mit einbauen und mit einer Wechsel-Funktion hinterlegen. Beim Klick auf einen Tab wird der Inhalt geändert.
 
