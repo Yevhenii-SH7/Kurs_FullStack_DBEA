@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBE-fly</title>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://www.dbe.academy" /><img src="src/img/logo-green.svg" /></a>
+        <nav id="menu">
+            <ul id="menu-tab">
+                <li><a class="link-menu" href="#">Buchen & Vorbereiten</a></li>
+                <li><a class="link-menu" href="#">Meine Buchungen</a></li>
+                <li><a class="link-menu" href="#">DBE Fly entdecken</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="section-head">
+        <div class="tabs">
+            <input type="radio" name="tabs" id="tab1" checked>
+            <label for="tab1">Flüge</label>
+
+            <input type="radio" name="tabs" id="tab2">
+            <label for="tab2">Flug & Hotel</label>
+
+            <input type="radio" name="tabs" id="tab3">
+            <label for="tab3">Mietwagen</label>
+
+            <input type="radio" name="tabs" id="tab4">
+            <label for="tab4">Hotel</label>
+            <div class="content">
+
+                <div id="content1" class="tab-content">
+                    <form method="post" action="">
+                        <div class="flight-type-container">
+                            <select id="content-select" type="select">
+                                <option value="Hin- und Rückflug" selected>Hin- und Rückflug</option>
+                                <option value="Nur Hinflug">Nur Hinflug</option>
+                                <option value="Gabelflug">Gabelflug</option>
+                            </select>
+                            <!-- <div class="select-wrapper">
+                                <span id="flugclass">Economy, 1 Reisende(r)</span>
+                            </div> -->
+                            <div class="select-wrapper">
+                                <label for="modal-toggle" id="flugclass">Economy, 1 Reisende(r)</label>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="direktflug">
+                                    <label id="checkbox-label" for="direktflug">Nur Nonstop flüge</label>
+                                </div>
+                            </div>
+                            <div class="flight-form">
+                                <div class="form-group">
+                                    <img src="src/img/chat-dots-svgrepo-com.svg" alt="icon" class="input-icon">
+                                    <input type="text" id="von" placeholder="">
+                                    <label for="von">Von</label>
+                                </div>
+                                <div id="arrow"><img src="src/img/arrow-left-arrow-right-svgrepo-com.svg" alt="icon" />
+                                </div>
+                                <div class="form-group">
+                                    <img src="src/img/chat-dots-svgrepo-com.svg" alt="icon" class="input-icon">
+                                    <input type="text" id="nach" placeholder="">
+                                    <label for="nach">Nach</label>
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="date" id="hinflug"><label for="hinflug">Abflüg-Rückflug</label>
+                                </div>
+
+                                <button type="button" class="search-button">Flüge suchen</button>
+                            </div>
+                    </form>
+                </div>
+
+                <div id="content2" class="tab-content">
+                    <form method="post" action="">
+                        <div class="flight-type-container">
+                            <label for="tab1" class="back-to-flights">
+                                <img src="src/img/close-svgrepo-com.svg" alt="Back to flights">
+                            </label>
+                            <div class="flight-form" id="flight-form-group">
+                                <div class="form-group">
+                                    <input type="text" id="von2" placeholder="">
+                                    <label for="von2">Von</label>
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="nach2" placeholder="">
+                                    <label for="nach2">Nach</label>
+                                </div>
+                            </div>
+                            <div class="flight-form" id="flight-date-group">
+                                <div class="form-group">
+                                    <input type="date" id="hinflug2">
+                                    <label for="hinflug2">Abflügdatum</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" id="rueckflug2">
+                                    <label for="rueckflug2">Rückflugdatum</label>
+                                </div>
+                                <select id="content-select" type="select">
+                                    <option value="Hin- und Rückflug" selected>Hin- und Rückflug</option>
+                                    <option value="Nur Hinflug">Nur Hinflug</option>
+                                    <option value="Gabelflug">Gabelflug</option>
+                                </select>
+
+                            </div>
+
+                            <div class="flight-hotel-counter">
+                                <div class="counter-container">
+                                    <span>Erwachsene</span>
+                                    <div id="countr-btn">
+                                        <button id="decrement">−</button>
+                                        <span id="count">2</span>
+                                        <button id="increment">+</button>
+                                    </div>
+                                </div>
+                                <div class="children-text">
+                                    <span>+ Reisen mit Kindern (bis 16 Jahre)</span>
+                                    <button type="button" class="search-button">Reise suchen</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="content3" class="tab-content">
+                    <form method="post" action="">
+                        <label for="tab1" class="back-to-flights">
+                            <img src="src/img/close-svgrepo-com.svg" alt="Back to flights">
+                        </label>
+                        <div id="mietwagen-radio">
+                            <input type="radio" id="mietwagen-option" name="mietwagen-option" checked>
+                            <label for="mietwagen-option">Mietwagen</label>
+                            <input type="radio" id="flughafentransfer-option" name="mietwagen-option">
+                            <label for="flughafentransfer-option">Flughafentransfer</label>
+                        </div>
+                        <div class="flight-form">
+                            <div class="form-group">
+                                <img src="src/img/chat-dots-svgrepo-com.svg" alt="icon" class="input-icon">
+                                <input type="text" id="von_mietwagen" placeholder="">
+                                <label for="von_mietwagen">Von</label>
+                            </div>
+                            <div class="form-group">
+                                <img src="src/img/chat-dots-svgrepo-com.svg" alt="icon" class="input-icon">
+                                <input type="text" id="nach_mietwagen" placeholder="">
+                                <label for="nach_mietwagen">Nach</label>
+                            </div>
+                            <div class="flight-form">
+                                <div class="form-group">
+                                    <input type="date" id="hinflug_mietwagen">
+                                    <label for="hinflug_mietwagen">Abflügdatum</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" id="rueckflug_mietwagen">
+                                    <label for="rueckflug_mietwagen">Rückflugdatum</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mietwagen-form">
+                            <div id="mietwagen-img"><img id="mietwagen-img1"
+                                    src="src/img/triangle-right-svgrepo-com.svg" />
+                                Erwartete suchoptionen
+                            </div>
+                            <button type="button" class="search-button">Mietwagen suchen</button>
+
+                        </div>
+                        <div><span>Mindestens 500 Miles & More Meilen pro Anmietung</span></div>
+                    </form>
+                </div>
+
+                <div id="content4" class="tab-content">
+                    <form method="post" action="">
+                        <label for="tab1" class="back-to-flights">
+                            <img src="src/img/close-svgrepo-com.svg" alt="Back to flights">
+                        </label>
+                        <div class="flight-form">
+                            <div class="form-group">
+                                <img src="src/img/chat-dots-svgrepo-com.svg" alt="icon" class="input-icon">
+                                <input type="text" id="hotel-zielort" placeholder="">
+                                <label for="hotel-zielort">Zielort</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="date" id="hotel-anreisedatum">
+                                <label for="hotel-anreisedatum">Anreisedatum</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="hotel-abreisedatum">
+                                <label for="hotel-abreisedatum">Abreisedatum</label>
+                            </div>
+
+                        </div>
+                        <div class="flight-hotel-form">
+                            <p>Hoot-Sachangen schließen Sie direkt mit unseren Partner hotel.com und separat von der
+                                SW155 Flugbuchung an</p>
+                            <button type="button" class="search-button">Hotel suchen</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+    <section id="section-main">
+        <div id="image1">
+            <a href="#"><img class="img"
+                    src="https://images.unsplash.com/photo-1658109751022-a460d050478a?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <p>Flugplan 2024</p>
+                <h2>Entdecken Sie unsere neuen Destinationen</h2>
+            </a>
+        </div>
+        <div id="image2">
+            <a href="#"> <img class="img"
+                    src="https://images.unsplash.com/flagged/photo-1558954157-7104f14c2ecc?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <p>DBE Travel Briefing</p>
+                <h2>Profitieren Sie vom Reiseleitfaden mit nützlichen Tipps</h2>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 DBE Travel. All rights reserved.</p>
+    </footer>
+    <input type="checkbox" id="modal-toggle" class="modal-toggle" style="display:none;">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle" class="close">&times;</label>
+            <h3>Reiseklasse und Reisende</h3>
+
+            <div class="modal-section">
+                <h4>Reiseklasse</h4>
+                <div class="radio-group">
+                    <label><input type="radio" name="travel-class" value="Economy" checked> Economy</label>
+                    <label><input type="radio" name="travel-class" value="Premium Economy"> Premium Economy</label>
+                    <label><input type="radio" name="travel-class" value="Business"> Business</label>
+                    <label><input type="radio" name="travel-class" value="First"> First</label>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Reisende</h4>
+                <div class="passenger-counter">
+                    <div class="passenger-type">
+                        <span>Erwachsene</span>
+                        <div class="counter">
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="passenger-type">
+                        <span>Kinder (2-11 Jahre)</span>
+                        <div class="counter">
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="passenger-type">
+                        <span>Babys (unter 2 Jahre)</span>
+                        <div class="counter">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <label for="modal-toggle" class="apply-button">Anwenden</label>
+        </div>
+    </div>
+</body>
+
+</html>

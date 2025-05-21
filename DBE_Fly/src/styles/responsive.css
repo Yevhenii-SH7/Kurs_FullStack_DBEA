@@ -1,0 +1,255 @@
+/* Responsive Stile */
+@media (max-width: 900px) {
+    #section-main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image1"
+            "image2";
+    }
+
+    #image1,
+    #image2 {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #section-head {
+        margin-top: 30px;
+    }
+
+    #menu-tab {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        align-self: center;
+    }
+
+    .flight-type-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #content-select,
+    .select-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tabs {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .tabs>label[for^="tab"] {
+        width: calc(25% - 5px);
+        padding: 8px 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .tabs>label[for="tab4"] {
+        margin-right: 0;
+    }
+
+    .tabs>label[for="tab1"],
+    .tabs>label[for="tab2"],
+    .tabs>label[for="tab3"],
+    .tabs>label[for="tab4"] {
+        width: calc(25% - 5px);
+        margin-right: 5px;
+    }
+
+    .tabs>label[for="tab4"] {
+        margin-right: 0;
+    }
+
+    #content2 .flight-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .flight-form .flight-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .form-group {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content2 input[type="text"],
+    #content2 input[type="date"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #content2 .flight-hotel-form {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    #content2 .flight-hotel-counter {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #content2 .children-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .children-text span {
+        margin-bottom: 0;
+    }
+
+    #content2 .children-text .search-button {
+        align-self: flex-end;
+        margin-top: 15px;
+    }
+
+    #flight-form-group {
+        flex-wrap: wrap;
+    }
+
+    #arrow {
+        top: 25%;
+        left: 34%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 95vw;
+    }
+
+    #section-head {
+        height: auto;
+        min-height: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .img {
+        height: 200px;
+    }
+
+    .tabs {
+        width: 100%;
+        max-width: 95%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .tabs>label[for^="tab"] {
+        padding: 8px 10px;
+        font-size: 14px;
+        width: 100%;
+        margin: 5px 0;
+        box-sizing: border-box;
+        float: none;
+    }
+
+    .tabs>label[for="tab1"],
+    .tabs>label[for="tab2"],
+    .tabs>label[for="tab3"],
+    .tabs>label[for="tab4"] {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #content2 .flight-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .flight-form .flight-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .form-group {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content2 input[type="text"],
+    #content2 input[type="date"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #content2 .flight-hotel-form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    #content2 .children-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .children-text .search-button {
+        align-self: flex-end;
+        margin-top: 20px;
+    }
+
+    #flight-form-group {
+        flex-wrap: wrap;
+    }
+
+    #arrow {
+        top: 14%;
+        left: 50%;
+    }
+}

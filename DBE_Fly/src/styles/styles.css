@@ -1,0 +1,1055 @@
+/* Hauptstile */
+body {
+    width: 90vw;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Stile für Header und Menü */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu-tab {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 20px;
+}
+
+#menu-tab li {
+    margin-right: 20px;
+}
+
+#menu-tab li:last-child {
+    margin-right: 0;
+}
+
+.link-menu {
+    color: black;
+    text-decoration: none;
+}
+
+.link-menu:hover {
+    color: #1db1b1;
+}
+
+/* Stile für Sektionen */
+#section-head {
+    width: 100%;
+    height: 400px;
+    background-position: center top;
+    background-image: url(https://plus.unsplash.com/premium_photo-1681930071839-e5fbf9fae636?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "image1 image2";
+    margin-top: 20px;
+    width: 100%;
+    justify-items: center;
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#image1,
+#image2 {
+    width: 450px;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#image1 {
+    grid-area: image1;
+}
+
+#image2 {
+    grid-area: image2;
+}
+
+.img {
+    width: 450px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Allgemeine Stile für Links */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stile für Tabs und deren Inhalt */
+.tabs {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs>label[for^="tab"] {
+    float: left;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    background: #000000;
+    color: white;
+    position: relative;
+    top: 3px;
+    z-index: 1;
+    box-sizing: border-box;
+    width: calc(25% - 5px);
+    text-align: center;
+}
+
+.tabs>label[for="tab4"] {
+    margin-right: 0;
+    width: 25%;
+}
+
+.tabs input[type="radio"]:checked+label {
+    background: white;
+    border-bottom: 1px solid white;
+    color: #1db1b1;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.content {
+    clear: both;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 0 5px 5px 5px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+/* Icons für Tabs */
+.tabs>label[for="tab1"]::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/airplane-mode-svgrepo-com.svg);
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+.tabs>label[for="tab2"]::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/departure-airport-svgrepo-com.svg);
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+.tabs>label[for="tab3"]::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/passenger-car-3-svgrepo-com.svg);
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+.tabs>label[for="tab4"]::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/hotel-svgrepo-com.svg);
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+#flugclass::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/setting-4-svgrepo-com.svg);
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+#flugclass:hover::before {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(83%) saturate(434%) hue-rotate(131deg) brightness(86%) contrast(93%);
+}
+
+.tab-content {
+    padding: 25px;
+    display: none;
+    position: relative;
+}
+
+#arrow {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#arrow img {
+    width: 14px;
+    height: 14px;
+    display: block;
+}
+
+
+#arrow:hover img {
+    opacity: 1;
+}
+
+.content label.back-to-flights {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    float: none;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.back-to-flights img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.back-to-flights:hover img {
+    opacity: 1;
+}
+
+#tab1:checked~.content #content1,
+#tab2:checked~.content #content2,
+#tab3:checked~.content #content3,
+#tab4:checked~.content #content4 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+/* Stile für Formulare */
+.flight-type-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flight-form {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#von {
+    margin-right: -5px;
+}
+#nach {
+    margin-left: -5px;
+}
+
+#mietwagen-img1 {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.form-row {
+    display: none;
+}
+
+.form-group {
+    position: relative;
+
+    min-width: 120px;
+    flex: 1;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background: transparent;
+    border: none;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label {
+    top: 2px;
+    left: 10px;
+    font-size: 10px;
+    color: #1db1b1;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #1db1b1;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(29, 177, 177, 0.2);
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* Stile für Buttons */
+.search-button {
+    background-color: #1db1b1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0;
+    height: 45px;
+    align-self: center;
+}
+
+.search-button:hover {
+    background-color: #169e9e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile für Passagierzähler */
+.flight-hotel-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#countr-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+#countr-btn button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #f5f5f5;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+#countr-btn button:hover {
+    background-color: #e0e0e0;
+}
+
+#countr-btn button:active {
+    background-color: #d0d0d0;
+    transform: scale(0.95);
+}
+
+#count {
+    font-size: 16px;
+}
+
+/* Stile für Checkboxen und Selects */
+#checkbox-label {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    float: none;
+    position: static;
+    cursor: pointer;
+    font-weight: normal;
+    display: inline;
+}
+
+#content-select {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url('../img/chevron-down-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+#content-select:focus {
+    border-color: #1db1b1;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(29, 177, 177, 0.2);
+}
+
+.select-wrapper {
+    padding: 8px 12px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: row;
+}
+
+.select-wrapper:hover {
+    border-color: #1db1b1;
+}
+
+#flugclass:hover{
+    color: #1db1b1;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Stile für Mietwagen-Sektion */
+.mietwagen-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 10px 0;
+}
+
+#mietwagen-img {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#mietwagen-img:hover {
+    color: #1db1b1;
+}
+
+#mietwagen-radio {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#mietwagen-radio input[type="radio"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+#content4 p {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Stile */
+@media (max-width: 900px) {
+    #section-main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image1"
+            "image2";
+    }
+
+    #image1,
+    #image2 {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #section-head {
+        margin-top: 30px;
+    }
+
+    #menu-tab {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        align-self: center;
+    }
+
+    .flight-type-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #content-select,
+    .select-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tabs {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .tabs > label[for^="tab"] {
+        width: calc(25% - 5px);
+        padding: 8px 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .tabs > label[for="tab4"] {
+        margin-right: 0;
+    }
+
+    .tabs > label[for="tab1"],
+    .tabs > label[for="tab2"],
+    .tabs > label[for="tab3"],
+    .tabs > label[for="tab4"] {
+        width: calc(25% - 5px);
+        margin-right: 5px;
+    }
+
+    .tabs > label[for="tab4"] {
+        margin-right: 0;
+    }
+
+    #content2 .flight-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .flight-form .flight-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .form-group {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content2 input[type="text"],
+    #content2 input[type="date"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #content2 .flight-hotel-form {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    #content2 .flight-hotel-counter {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #content2 .children-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .children-text span {
+        margin-bottom: 0;
+    }
+
+    #content2 .children-text .search-button {
+        align-self: flex-end;
+        margin-top: 15px;
+    }
+
+    #flight-form-group {
+        flex-wrap: wrap;
+    }
+
+    #arrow {
+        top: 25%;
+        left: 34%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 95vw;
+    }
+
+    #section-head {
+        height: auto;
+        min-height: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .img {
+        height: 200px;
+    }
+
+    .tabs {
+        width: 100%;
+        max-width: 95%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .tabs > label[for^="tab"] {
+        padding: 8px 10px;
+        font-size: 14px;
+        width: 100%;
+        margin: 5px 0;
+        box-sizing: border-box;
+        float: none;
+    }
+
+    .tabs > label[for="tab1"],
+    .tabs > label[for="tab2"],
+    .tabs > label[for="tab3"],
+    .tabs > label[for="tab4"] {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #content2 .flight-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .flight-form .flight-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .form-group {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content2 input[type="text"],
+    #content2 input[type="date"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #content2 .flight-hotel-form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    #content2 .children-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #content2 .children-text .search-button {
+        align-self: flex-end;
+        margin-top: 20px;
+    }
+
+    #flight-form-group {
+        flex-wrap: wrap;
+    }
+
+    #arrow {
+        top: 14%;
+        left: 50%;
+    }
+}
+
+#von2,
+#nach2 {
+    width: 250px;
+}
+
+#hinflug2,
+#rueckflug2 {
+    width: 150px;
+}
+
+#flight-form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 15px;
+    position: relative;
+    min-height: 60px;
+}
+
+#flight-form-group .form-group {
+    flex: 0 0 auto;
+    width: auto;
+    position: relative;
+}
+
+#flight-date-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#flight-date-group .form-group {
+    flex: 0 0 auto;
+    width: auto;
+    margin-left: 0;
+}
+
+#flight-date-group select {
+    flex: 0 0 auto;
+    width: auto;
+    margin-left: 0;
+}
+
+#hotel-form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100px;
+    flex-wrap: nowrap;
+}
+
+.counter-co {
+    display: flex;
+    flex-direction: column;
+}
+
+.flight-hotel-counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    gap: 25px;
+}
+
+.children-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+}
+
+.flight-hotel-bt {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+/* Скрываем чекбокс */
+.modal-toggle {
+    display: none;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Показываем модальное окно при активации чекбокса */
+.modal-toggle:checked ~ .modal {
+    display: block;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10000;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.modal-section {
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.passenger-counter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.passenger-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.apply-button {
+    display: block;
+    background-color: #1db1b1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#flugclass {
+    cursor: pointer;
+}
