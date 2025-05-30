@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DBE-fly</title>
     <link rel="stylesheet" href="/src/styles/styles.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -70,8 +71,11 @@
                                     <input type="date" id="hinflug"><label for="hinflug">Abflüg-Rückflug</label>
                                 </div>
 
-                                <button type="button" class="search-button">Flüge suchen</button>
+                                <button type="button" id="open-modal" class="search-button">Flüge suchen</button>
+
                             </div>
+
+                        </div>
                     </form>
                 </div>
 
@@ -226,6 +230,13 @@
     <footer>
         <p>&copy; 2025 DBE Travel. All rights reserved.</p>
     </footer>
+    <div id="Suchen-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Suchen</h1>
+            <p>Die suche wurde gestartet</p>
+        </div>
+    </div>
     <input type="checkbox" id="modal-toggle" class="modal-toggle" style="display:none;">
     <div class="modal">
         <div class="modal-content">
