@@ -21,6 +21,8 @@ DBE_fly/
 │   │   ├── passenger-car-3-svgrepo-com.svg
 │   │   ├── setting-4-svgrepo-com.svg
 │   │   └── triangle-right-svgrepo-com.svg
+│   ├── js/                # JavaScript-Dateien für die Website-Funktionalität
+│   │   ├── script.js
 └── README.md               # Projektdokumentation
 ```
 
@@ -46,6 +48,21 @@ DBE_fly/
 - Intuitive Benutzeroberfläche
 - Unterstützung verschiedener Geräte und Browser
 
+## JavaScript-Funktionalität
+- Dynamische Tab-Navigation für die verschiedenen Buchungsoptionen
+- Interaktiver Passagierzähler mit Inkrement- und Dekrement-Funktionen
+- Formularvalidierung für Flug-, Hotel- und Autovermietungssuche
+- Responsive Menü-Funktionalität für mobile Geräte
+- Dynamische Datums- und Zeitauswahl
+- Automatische Aktualisierung der Formularfelder basierend auf Benutzerauswahl
+
+### JavaScript-Features
+- Event-Handling für Benutzerinteraktionen
+- DOM-Manipulation für dynamische Inhaltsaktualisierungen
+- Formularvalidierung und -verarbeitung
+- Responsive Design-Unterstützung
+- Moderne ES6+ Syntax
+- Asynchrone Datenverarbeitung
 
 ## Aufgabe: Die DBE-Fly!
 Erstelle eine HTML-Datei inklusive CSS, um die folgende Webseite nachzubauen. Die Icons kannst du dir bei svgrepo (Link siehe unten) heraussuchen – sie müssen nicht exakt identisch sein. Die Bilder findest du auf unsplash (Link siehe unten) – auch hier ist eine 100%ige Übereinstimmung nicht erforderlich.
