@@ -21,6 +21,8 @@ DBE_fly/
 │   │   ├── passenger-car-3-svgrepo-com.svg
 │   │   ├── setting-4-svgrepo-com.svg
 │   │   └── triangle-right-svgrepo-com.svg
+│   ├── js/                # JavaScript-Dateien für die Website-Funktionalität
+│   │   └── script.js      # Hauptskript für die Website-Interaktivität
 └── README.md               # Projektdokumentation
 ```
 
