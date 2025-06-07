@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DBE-fly</title>
     <link rel="stylesheet" href="/src/styles/styles.css">
-    <script src="/src/js/script.js" defer></script>
+    <link rel="stylesheet" href="/src/styles/modalflug.css">
+    <link rel="stylesheet" href="/src/styles/responsive.css">
+    <script src="/src/js/flugsuchen.js" defer></script>
 </head>
 
 <body>
@@ -71,7 +73,7 @@
                                     <input type="date" id="hinflug"><label for="hinflug">Abflüg-Rückflug</label>
                                 </div>
 
-                                <button type="button" id="open-modal" class="search-button">Flüge suchen</button>
+                                <button type="submit" id="open-modal" class="search-button">Flüge suchen</button>
 
                             </div>
 
@@ -233,8 +235,10 @@
     <div id="Suchen-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h1>Suchen</h1>
-            <p>Die suche wurde gestartet</p>
+            <h1>Suchergebnisse</h1>
+            <div id="modal-section">
+                <!-- Flight cards will be dynamically inserted here -->
+            </div>
         </div>
     </div>
     <input type="checkbox" id="modal-toggle" class="modal-toggle" style="display:none;">
@@ -247,7 +251,8 @@
                 <h4>Reiseklasse</h4>
                 <div class="radio-group">
                     <label><input type="radio" name="travel-class" value="Economy" checked> Economy</label>
-                    <label><input type="radio" name="travel-class" value="Premium Economy"> Premium Economy</label>
+                    <label><input type="radio" name="travel-class" value="Premium Economy"> Premium
+                        Economy</label>
                     <label><input type="radio" name="travel-class" value="Business"> Business</label>
                     <label><input type="radio" name="travel-class" value="First"> First</label>
                 </div>
