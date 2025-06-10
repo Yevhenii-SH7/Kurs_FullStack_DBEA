@@ -22,7 +22,7 @@ DBE_fly/
 │   │   ├── setting-4-svgrepo-com.svg
 │   │   └── triangle-right-svgrepo-com.svg
 │   ├── js/                # JavaScript-Dateien für die Website-Funktionalität
-│   │   ├── script.js
+│   │   └── flugsuchen.js      # Hauptskript für die Website-Interaktivität
 └── README.md               # Projektdokumentation
 ```
 
