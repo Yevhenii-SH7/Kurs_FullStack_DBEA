@@ -22,6 +22,83 @@
     overflow-y: auto;
 }
 
+.modal:not(#Suchen-modal) {
+    display: none;
+}
+
+.modal:not(#Suchen-modal) .modal-content {
+    max-width: 500px;
+}
+
+.modal-section {
+    margin: 20px 0;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.passenger-counter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.passenger-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter button:hover {
+    background: #f5f5f5;
+}
+
+.apply-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #1db1b1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-button:hover {
+    background: #169e9e;
+}
+
 #modal-section {
     margin: 0 auto;
     display: flex;
@@ -61,13 +138,14 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     position: relative;
     padding-right: 20px;
 }
 .flight-info p {
     margin: 5px 0;
     margin-left: 10px;
+    text-align: center;
 }
 
 .flight-time {
