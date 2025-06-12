@@ -57,6 +57,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#content1 form");
   const vonInput = document.getElementById("von");
   const nachInput = document.getElementById("nach");
+  const datumInput = document.getElementById("hinflug");
+
+  // Load the saved values into the form fields
+  const savedVon = localStorage.getItem('von');
+  const savedNach = localStorage.getItem('nach');
+  const savedDatum = localStorage.getItem('datum');
+
+  if (savedVon) vonInput.value = savedVon;
+  if (savedNach) nachInput.value = savedNach;
+  if (savedDatum && datumInput) datumInput.value = savedDatum;
 
   // Bearbeitung von Formularen
   form.addEventListener("submit", async function (event) {
@@ -64,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const vonValue = vonInput.value.trim();
     const nachValue = nachInput.value.trim();
-    const datumInput = document.getElementById("hinflug");
     const datumValue = datumInput ? datumInput.value : "";
 
     if (!vonValue || !nachValue || !datumValue) {
@@ -72,6 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "block";
       return;
     }
+
+    // Save form values to localStorage
+    localStorage.setItem('von', vonValue);
+    localStorage.setItem('nach', nachValue);
+    localStorage.setItem('datum', datumValue);
 
     modal.style.display = "block";
     modalSection.innerHTML = "<p>Lade Flüge...</p>";

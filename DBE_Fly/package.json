@@ -1,0 +1,16 @@
+{
+  "name": "DBE_fly",
+  "version": "1.0.0",
+  "description": "## Projektbeschreibung DBE Fly ist ein Mockup der Hauptseite einer Website für Flugbuchungen, Hotelreservierungen und Autovermietungen. Das Projekt demonstriert ein modernes Design unter Verwendung von HTML und CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.6"
+  }
+}
