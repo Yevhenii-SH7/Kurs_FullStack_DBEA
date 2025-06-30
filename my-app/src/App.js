@@ -4,6 +4,7 @@ import { useState } from "react";
 import Counter from "./Count";
 import Lichtschalter from "./Lichtschalter";
 import PokemonFetcher from "./PockemonUseEffect";
+import ToDoList from "./ToDoList";
 
 const MyButton = ({ count, onClick }) => {
   return <button onClick={onClick}>
@@ -26,6 +27,7 @@ export default function MyApp() {
       <MyButton count={count} onClick={handleClick} />
       <MyButton count={count} onClick={handleClick} />
       <PokemonFetcher />
+      <ToDoList />
     </div>
   );
 }
