@@ -7,10 +7,8 @@ import PokemonFetcher from "./PockemonUseEffect";
 import ToDoList from "./ToDoList";
 
 const MyButton = ({ count, onClick }) => {
-  return <button onClick={onClick}>
-    Clicked {count} times
-    </button>;
-}
+  return <button onClick={onClick}>Clicked {count} times</button>;
+};
 
 export default function MyApp() {
   const [count, setCount] = useState(0);
