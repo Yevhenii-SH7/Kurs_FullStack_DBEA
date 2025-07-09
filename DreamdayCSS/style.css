@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #faf6fd;
+    margin: 0;
+    padding: 0px 40px;
+}
+
+
+.header h1 {
+    font-size: 1.5em;
+    color: #9f7ab0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #6b4c8a;
+}
+
+.nav a.active {
+    color: #6b4c8a;
+    border-bottom: 2px solid #6b4c8a;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/erika-fletcher-quKkhmldPJQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    text-align: center;
+    min-height: 95vh;
+    margin: 0;
+}
+
+#hero-text {
+    width: 100%;
+    background-color: #00000041;
+    margin-bottom: 20px;
+}
+
+#hero-text h1 {
+    font-size: 4em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#hero-text p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #faf6fd;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-container,
+.services-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+#about img,
+.services-container img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-content,
+.services-content {
+    width: 400px;
+    height: auto;
+    text-align: left;
+    color: #4a4058;
+    font-size: 1.3em;
+
+}
+
+#about h2 {
+    font-size: 2em;
+    color: #9f7ab0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.services-content h3 {
+    font-size: 1em;
+    color: #9f7ab0;
+    margin-bottom: 20px;
+}
+
+#anfahrt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #9f7ab0;
+    font-size: 1.3em;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+
+}
+
+#anfahrt img {
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 100%;
+}
+
+#services h2 {
+    font-size: 2em;
+    color: #9f7ab0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #faf6fd;
+    margin: 0px auto;
+    max-width: 100%;
+
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #9f7ab0;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 40px;
+}
+
+.contact-info {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 200px;
+    text-align: left;
+    color: #4a4058;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+.contact-info p:first-child {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.contact-form input {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#submit-button {
+    width: 100px;
+    height: 40px;
+    background-color: #9f7ab0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #4a4058;
+    color: #9f7ab0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
