@@ -12,5 +12,12 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.6"
-  }
+  },
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build"
+},
+"devDependencies": {
+  "react-scripts": "^5.0.1"
+}
 }

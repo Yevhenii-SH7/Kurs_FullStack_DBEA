@@ -1,0 +1,49 @@
+
+services:
+  mariadb:
+    image: mariadb:11.3
+    container_name: mariadb-container
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass
+      MARIADB_DATABASE: crmfreelance_db
+      MARIADB_USER: user
+      MARIADB_PASSWORD: userpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+
+  app:
+    build: ./app
+    container_name: crmfreelance-app
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      - mariadb
+    environment:
+      DB_HOST: mariadb
+      DB_USER: user
+      DB_PASSWORD: userpass
+      DB_NAME: crmfreelance_db
+    volumes:
+      - ./public-html:/var/www/html         # твои PHP-файлы
+      - ./php.ini:/usr/local/etc/php/php.ini  # <-- кастомный php.ini
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    platform: linux/amd64
+    container_name: pma-container
+    restart: always
+    depends_on:
+      - mariadb
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports:
+      - "8081:80"
+
+volumes:
+  mariadb-data:
