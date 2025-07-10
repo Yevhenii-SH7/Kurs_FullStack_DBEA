@@ -1,0 +1,128 @@
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .menu-icon {
+        display: block !important;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #faf6fd;
+        z-index: 1000;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .nav li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav a {
+        display: block;
+        padding: 15px;
+        margin: 0;
+    }
+
+    #menu-toggle:checked+.menu-icon+.menu-container .nav {
+        display: block !important;
+    }
+
+    #hero-text h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    #about h2,
+    #services h2 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .anfahrt-title,
+    #contact h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .about-container,
+    .services-container {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.6em;
+    }
+
+    #about img,
+    .services-container img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .about-content,
+    .services-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    #anfahrt img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 0;
+        text-align: center;
+        width: 60%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Burger Menu */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+#menu-toggle {
+    display: none;
+}
