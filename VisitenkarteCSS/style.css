@@ -1,62 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 20px auto;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+    width: 95vw;
+    height: 95vh;
+}
+
 .header {
     display: flex;
     margin: 0 auto;
-    width: 90%;
-    height: 500px;
-    border: 2px solid green;
+
+
 }
+
 #about {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
-    background-color: rgb(227, 230, 244);
-    display: flex;
-    align-items: left;
+    background-color: #6A74DB;
+    align-items: flex-start;
     justify-content: center;
     padding: 0 60px;
+    color: #FFFFFF;
 }
+
 #card {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
-    background-color: #f3f8f3;
-    display: flex;
+    background-color: rgba(255, 255, 255, 0.16);
     align-items: center;
     justify-content: center;
 }
+
+.bio {
+    width: 60%;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    color: #5D5D5D;
+}
+
+.job-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5D5D5D;
+    font-size: 1em;
+    margin: 10px 0 15px 0;
+}
+
 .skills-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 5px;
+    font-size: 0.5em;
 }
+
 .skill {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #c7c9cad1;
+    padding: 5px 10px;
+    background-color: #b3ceee85;
     color: white;
     border-radius: 50px;
     text-align: center;
 }
+
 h1 {
-    margin: 5px 0;
+    font-size: 3em;
+    margin: 0;
+    color: #FFFFFF;
 }
+
+.job-ort {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 1em;
+    margin: 15px 0;
+}
+
+.skill-bio {
+    width: 100%;
+    text-align: justify;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
 h2 {
-    margin: 5px 0;
+    color: #000000;
+    margin-top: 5px;
 }
+
 img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid black;
 }
+
 .contact-buttons {
     display: flex;
     flex-direction: row;
@@ -65,6 +118,7 @@ img {
     width: 100%;
     gap: 10px;
 }
+
 button {
     padding: 10px 20px;
     color: white;
@@ -72,11 +126,14 @@ button {
     border-radius: 8px;
     cursor: pointer;
 }
+
 #email-button {
-    background-color: rgb(84, 111, 231);
+    background-color: #1B7EDA;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.427);
 }
+
 #portfolio-button {
     background-color: #ffffff;
-    color: black; /* White */
+    color: #1B7EDA;
+    border: 2px solid #1B7EDA;
 }
