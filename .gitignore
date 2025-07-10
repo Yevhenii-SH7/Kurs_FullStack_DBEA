@@ -1,2 +1,3 @@
 # Игнорировать системные файлы macOS
 .DS_Store
+.vscode/settings.json
