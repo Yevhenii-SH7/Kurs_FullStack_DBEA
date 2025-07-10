@@ -23,6 +23,7 @@
 
 .header-content h1 {
     margin: 0 0 5px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .header-content p {
@@ -32,6 +33,7 @@
 .main {
     background: #EEEEEE;
     padding: 20px;
+    border-radius: 0 0 8px 8px;
 }
 
 #search-container {
@@ -71,14 +73,14 @@
 #results-container {
     background-color: #FFFFFF;
     padding: 20px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px 8px 8px 8px;
 }
 
 #smoothie-taste {
-   
+
     font-weight: bold;
     background: linear-gradient(135deg, #FFB347 0%, #FF67C0 100%);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px;
     text-align: center;
     width: 200px;
@@ -89,15 +91,16 @@ ul {
     padding: 0;
     margin: 10px auto;
     list-style: none;
-    width: 200px;}
+    width: 200px;
+}
 
 ul li {
-    
+
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: -2px 0px 4px #7B68EE;
     padding: 10px;
     margin: 5px 0;
-    text-align: center;
+    text-align: left;
 }
