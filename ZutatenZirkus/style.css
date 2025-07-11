@@ -20,6 +20,15 @@ header h1 {
     text-align: center;
     margin: 0 auto 20px;
 }
+.tooltip {
+    content: url(img/icons8-info-15.svg);
+    display: inline-block;
+    width: 15px;
+    height: auto;
+    margin-left: 5px;
+    margin-top: -15px;
+    vertical-align: middle;
+}
 header p {
     display: flex;
     font-size: 1em;
