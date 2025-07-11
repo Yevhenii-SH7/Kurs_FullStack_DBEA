@@ -4,14 +4,16 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
+
 body {
     background-color: #fffaec;
     width: 800px;
     margin: 0 auto 50px;
 }
+
 header {
-margin-top: 20px;
-margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -20,6 +22,7 @@ header h1 {
     text-align: center;
     margin: 0 auto 20px;
 }
+
 .tooltip {
     content: url(img/icons8-info-15.svg);
     display: inline-block;
@@ -28,21 +31,25 @@ header h1 {
     margin-left: 5px;
     margin-top: -15px;
     vertical-align: middle;
+    cursor: pointer;
 }
+
 header p {
     display: flex;
     font-size: 1em;
     color: #333;
     text-align: center;
     justify-content: center;
-   
+
 }
+
 .line {
     width: 800px;
     height: 3px;
     background-color: #aadcb0;
     margin: 0 auto 5px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -54,12 +61,14 @@ header p {
     background-color: #ff6b35;
     border-radius: 15px 15px 0 0;
 }
+
 .container h2 {
     font-size: 1.5em;
     color: #ffffff;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
+
 .beschreibung {
     font-size: 1em;
     background-color: #f9f2de;
@@ -69,6 +78,7 @@ header p {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
 .reciept-container {
     display: flex;
     flex-direction: column;
@@ -90,6 +100,7 @@ header p {
     width: 100%;
     margin-bottom: 20px;
 }
+
 .reciept-card {
     display: flex;
     flex-direction: row;
@@ -98,13 +109,15 @@ header p {
     width: 100%;
     gap: 20px;
 }
-.reciept-kochen{
+
+.reciept-kochen {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin-bottom: 20px;
-    
+
 }
+
 .reciept-kochen h3 {
     margin-left: 27px;
 }
@@ -117,6 +130,7 @@ header p {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .reciept-liste p {
     font-size: 1em;
     color: #333;
@@ -126,12 +140,14 @@ header p {
     display: flex;
     justify-content: space-between;
 }
+
 .custom-list {
     list-style: none;
     counter-reset: item;
     padding: 0;
     text-align: justify;
 }
+
 .custom-list li {
     counter-increment: item;
     margin-bottom: 15px;
@@ -139,14 +155,15 @@ header p {
     display: flex;
     align-items: flex-start;
 }
+
 .custom-list li::before {
-    content: counter(item ) ".";
-    
+    content: counter(item) ".";
+
     color: rgb(0, 0, 0);
     font-weight: bold;
     min-width: 25px;
     height: 25px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,13 +185,62 @@ header p {
     background-color: #aadcb0;
     margin: 10px 0px 10px 30px;
 }
+
 .fullline {
     width: 100%;
     margin-left: 0px;
-}   
-.reciept-bold {
-    font-weight: bold;
-    color: #000000;
+}
+
+.reciept-menge {
     text-align: right;
     margin-left: auto;
+}
+
+.text-bold {
+    font-weight: bold;
+    color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    backdrop-filter: blur(2px);
+    z-index: 9998;
+}
+
+.modal-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    background-color: #fff;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    z-index: 9999;
+}
+
+.modal-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 24px;
+    color: #696666cb;
+    cursor: pointer;
 }
