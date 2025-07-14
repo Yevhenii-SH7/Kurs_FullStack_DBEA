@@ -1,15 +1,17 @@
-@media (max-width: 768px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        padding: 20px;
+@media (max-width: 568px) {
+    .header h1 {
+        flex: 1 1 auto;
+        text-align: left;
+        margin: 0;
     }
 
-    .header h1 {
-        font-size: 1.5em;
+    .menu-icon {
+        flex: 0 0 auto;
         margin: 0;
+    }
+
+    .header {
+        padding: 10px 16px;
     }
 
     .menu-icon {
