@@ -1,0 +1,42 @@
+[
+    {
+        "zutaten": "Huhn",
+        "mengen": 1,
+        "einheiten": "Stk."
+    },
+    {
+        "zutaten": "Currypulver",
+        "mengen": 10,
+        "einheiten": "g"
+    },
+    {
+        "zutaten": "Kokos milch",
+        "mengen": 250,
+        "einheiten": "ml"
+    },
+    {
+        "zutaten": "Ingwer",
+        "mengen": 2,
+        "einheiten": "ml"
+    },
+    {
+        "zutaten": "Zwiebel",
+        "mengen": 1,
+        "einheiten": "Stk."
+    },
+    {
+        "zutaten": "Reis",
+        "mengen": 200,
+        "einheiten": "g"
+    },
+    {
+        "zutaten": "Zitronensaft",
+        "mengen": 20,
+        "einheiten": "ml"
+    },
+    {
+        "zutaten": "Chili",
+        "mengen": 0.5,
+        "einheiten": "g"
+    }
+]

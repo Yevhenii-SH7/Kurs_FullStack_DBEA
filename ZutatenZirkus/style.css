@@ -101,6 +101,15 @@ header p {
     margin-bottom: 20px;
 }
 
+.reciept-portionen label {
+    font-size: 1em;
+    color: #000000;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: #d7f8db;
+    border-radius: 10px;
+}
+
 .reciept-card {
     display: flex;
     flex-direction: row;
