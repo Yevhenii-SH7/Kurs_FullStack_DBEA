@@ -18,5 +18,10 @@ if (!($_SESSION['login'] ?? false)) {
     <h1>Willkommen <?= htmlspecialchars($_SESSION['username'] === "admin" ? "Admin" : 'User') ?> to User Panel</h1>
     <p>Sie sind erfolgreich eingeloggt!</p>
     <a href="logout.php">Logout</a>
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload File" name="submit">
+    </form>
 </body>
 </html>
