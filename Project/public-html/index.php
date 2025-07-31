@@ -11,5 +11,5 @@ var_dump($colors);
 
 
 
-
+phpinfo()
 ?>
